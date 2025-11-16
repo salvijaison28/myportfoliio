@@ -1,23 +1,28 @@
 import React from 'react';
 import "./App.css";
-import smiley from './assets/web-assets-06.png'
-import hand from './assets/web-assets-05.png'
-import peace from './assets/web-assets-02.png'
-import pencil from'./assets/web-assets-04.png'
-import arrow from './assets/arrows.png'
-import banner from './assets/my-works-tranistion.png'
-import proj1 from './assets/project-thumbnail-01.png'
-import proj2 from './assets/project-thumbnail-02.png'
-import proj3 from './assets/project-thumbnail-03.png'
-import proj4 from './assets/project-thumbnail-04.png'
-import proj5 from './assets/project-thumbnail-05.png'
-import proj6 from './assets/project-thumbnail-06.png'
-import headshot from './assets/headshot.jpeg'
-import aestheticshot from './assets/aestheticshot.jpeg'
-import passionshot from './assets/passionshot.jpeg'
+import { useSelector, useDispatch } from 'react-redux';
+import type { RootState, AppDispatch } from './redux/store';
+
+import smiley from '/assets/web-assets-06.png'
+import hand from '/assets/web-assets-05.png'
+import peace from '/assets/web-assets-02.png'
+import pencil from'/assets/web-assets-04.png'
+import arrow from '/assets/arrows.png'
+import banner from '/assets/my-works-tranistion.png'
+import proj1 from '/assets/project-thumbnail-01.png'
+import proj2 from '/assets/project-thumbnail-02.png'
+import proj3 from '/assets/project-thumbnail-03.png'
+import proj4 from '/assets/project-thumbnail-04.png'
+import proj5 from '/assets/project-thumbnail-05.png'
+import proj6 from '/assets/project-thumbnail-06.png'
+import headshot from '/assets/headshot.jpeg'
+import aestheticshot from '/assets/aestheticshot.jpeg'
+import passionshot from '/assets/passionshot.jpeg'
 
 
 function App() {
+   const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch<AppDispatch>();
   return (
     <div className="App">
       
