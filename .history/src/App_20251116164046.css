@@ -1,0 +1,605 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#home{
+  font-family: "Instrument Serif", serif;
+  font-size: 60px;
+  background-color:#CAFF1E;
+  padding: 50px;
+  padding-top: 290px;
+  height: 100vh;
+}
+
+#home h1 {
+ 
+   line-height: 1;         
+  display: flex;          
+  align-items: center;   
+  gap: 10px;            
+}
+
+.jobtitle{
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 10px;
+}
+.smileyicon{
+  width: 120px;
+  height:auto;
+  padding-top: 6px;
+  padding-left: 5px;  
+}
+
+.handicon{
+  transform: rotate(90deg);
+  width: 100px;
+  height:auto;
+}
+
+.peaceicon{
+  width: 100px;
+  height:auto;
+}
+
+.pencilicon{
+  width:120px;
+  height: auto;
+}
+
+.smileyicon,
+.handicon,
+.peaceicon,
+.pencilicon {
+  display: inline-block;   
+  vertical-align: middle;  
+  padding: 0 6px;
+}
+
+.smileyicon,
+.handicon,
+.peaceicon,
+.pencilicon{
+  transition: transform 0.3s ease;
+}
+.smileyicon:hover,
+.handicon:hover,
+.peaceicon:hover,
+.pencilicon:hover {
+  transform: translateY(-10px);
+}
+.smileyicon:active,
+.handicon:active,
+.peaceicon:active,
+.pencilicon:active {
+  transform: translateY(2px);
+}
+
+
+.navbar {
+  background: #1f1f1f;
+  border-radius: 9999px;
+  padding: 9px 30px;
+  display: inline-flex;
+  font-family: "Helvetica", "Arial", sans-serif;
+  align-items: center;
+  font-size: 40px;
+  gap: 30px;
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.navlink {
+  color: #9a9a9a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  padding: 8px 4px;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: #fff;
+}
+
+
+#about {
+   position: relative;           
+  background-color: #1f1f1f;
+  color: #CAFF1E;
+  height: 100vh;                 
+  overflow: hidden;
+}
+
+.abouttitle {
+  position: absolute;
+   top: -110px;                    
+  left: 0;
+  width: 100%;              
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 220px;           
+  color: #CAFF1E;
+  text-align: center;            
+  z-index: 10;                 
+}
+
+
+#about a{
+font-family: 'Poppins', sans-serif;
+padding: 10px;
+border: 1.5px solid #CAFF1E;
+color:#CAFF1E;
+
+}
+
+#about a:hover {
+  background: #CAFF1E;            
+  color: #0f0f0f;             
+  transform: translateY(-3px);   
+}
+
+#about p{
+font-family: 'Poppins', sans-serif;
+color:#CAFF1E;
+font-size: 17px;
+}
+
+#about h3{
+   font-family: "Instrument Serif", serif;
+  font-size: 80px;
+  color:#CAFF1E;
+  line-height: 1.0;
+}
+
+.aboutcontent {
+  padding-top: 400px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.aboutright{
+  padding-left: 40px;
+}
+
+.arrow {
+  padding-left: 10px;
+  width: 60px; 
+  height: auto; 
+}
+
+#skills {
+  height: 900px;
+  background-color: #1f1f1f;
+}
+
+.skillscontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 200px;
+}
+
+
+.skillsbox1, .skillsbox2, .skillsbox3 {
+  position: relative;
+  font-family: "Instrument Serif", serif;
+  font-size: 40px;
+  color: #1f1f1f;
+  background-color: #CAFF1E;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 400px;
+  display: flex;
+  line-height:1.2;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 20px 25px 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+
+.skillsbox1:hover,
+.skillsbox2:hover,
+.skillsbox3:hover {
+  background-color: #1f1f1f;
+  border: 1px solid #CAFF1E;
+  color: #CAFF1E;
+  cursor: pointer;
+}
+
+.skillsbox1::before,
+.skillsbox2::before,
+.skillsbox3::before {
+  position: absolute;
+  top: 25px;                   
+  left: 20px;
+  right: 20px;
+  color: #CAFF1E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0;                 
+  transition: opacity 0.2s ease;
+}
+
+
+.skillsbox1:hover::before,
+.skillsbox2:hover::before,
+.skillsbox3:hover::before {
+  opacity: 1;                  
+}
+
+.skillsbox1::before {
+  content: "I like building visual identities that stand out; designs that feel genuine and resonate with people. I enjoy playing with form, color, and texture to create something unique and memorable.";
+}
+.skillsbox2::before {
+  content: "When it comes to packaging, I see every box and unboxing moment as an experience; a story waiting to be told through design.";
+}
+.skillsbox3::before {
+  content: "Editorial design is about experimenting with type and layout to create something sophisticated, expressive, and deeply human.";
+}
+
+.transitionbanner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;    
+  margin-top: -80px;        
+  z-index: 5;                 
+}
+
+.myworkstransition {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translateY(10px); 
+}
+
+.transitionbanner {
+  margin-top: -220px; 
+}
+
+#projects{
+color:#1f1f1f;
+background-color: #CAFF1E;
+text-align: center;
+padding: 270px 300px 100px 300px;
+position: relative;
+z-index: 1;
+margin-top: -280px;
+}
+
+#projects p{
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+}
+
+#projects .paragraph{
+padding-bottom: 50px;
+}
+
+.projectsindividual{
+  display: grid;
+  grid-template-columns: 1fr 1fr;   
+  gap: 30px 25px;                 
+  padding: 40px 5vw;
+  align-items: start;
+}
+
+
+.proj1{ grid-column:1;        grid-row:1; }
+.proj2{ grid-column:1;        grid-row:2; }
+.proj3{ grid-column:2;        grid-row:1 / span 2; }   
+.proj4{ grid-column:1;        grid-row:3; }            
+.proj5{ grid-column:2;        grid-row:3; }       
+.proj6{ grid-column:1 / -1;   grid-row:4; }         
+
+
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6{
+  display:block;
+}
+
+.proj1img, .proj2img{ height:180px; }
+.proj3img, .proj4img, .proj5img{ height:380px; }
+.proj6img{ height:220px; }
+
+.proj1img, .proj2img, .proj3img, .proj4img, .proj5img, .proj6img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  
+}
+
+.proj1img img, .proj2img img, .proj3img img,
+.proj4img img, .proj5img img, .proj6img img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain; 
+  display:block;
+  margin:0 auto;    
+}
+
+
+.proj1text, .proj2text, .proj3text,
+.proj4text, .proj5text, .proj6text{
+  width:100%;
+  margin-top:6px;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+}
+
+.proj1text h3, .proj2text h3, .proj3text h3,
+.proj4text h3, .proj5text h3, .proj6text h3{
+  margin:0;
+  font:400 clamp(18px,1.8vw,24px) "Instrument Serif", serif;
+  color:#1f1f1f;
+}
+
+.proj1text a, .proj2text a, .proj3text a,
+.proj4text a, .proj5text a, .proj6text a{
+  font:500 13px/1 "Poppins", sans-serif;
+  color:#1f1f1f;
+  text-decoration:underline;
+}
+
+
+.loadmoretoggle{ display:none; }
+
+
+.hiddenprojects{ display:none; }
+
+
+.loadmoretoggle:checked + .hiddenprojects{ display:contents; }
+
+
+.loadmoretoggle:checked + .hiddenprojects + .loadmorebtn{ display:none; }
+
+.loadmorebtn{
+  grid-column:1 / -1;                
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:60px auto 0;               
+  width:130px; height:130px;
+  border:2px solid #1f1f1f;
+  border-radius:50%;
+  background:#CAFF1E;                
+  color:#1f1f1f;                     
+  font-family:'Poppins', sans-serif;
+  font-weight:500;
+  font-size:16px;
+  cursor:pointer;
+  transition:all .3s ease;
+  text-align:center;
+}
+.loadmorebtn:hover{ background:#1f1f1f; color:#CAFF1E; }
+
+
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6 {
+  display: block;
+}
+
+.proj1img, .proj2img, .proj3img, .proj4img, .proj5img, .proj6img {
+  width: 100%;
+  height: auto !important; 
+  overflow: hidden;
+}
+
+
+.proj1img img, .proj2img img, .proj3img img,
+.proj4img img, .proj5img img, .proj6img img {
+  width: 100%;
+  height: auto;            
+  object-fit: contain;
+  display: block;
+}
+
+
+.proj1text, .proj2text, .proj3text,
+.proj4text, .proj5text, .proj6text {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6 {
+  background-color: #CAFF1E;     
+  overflow: hidden;        
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+.proj1img img,
+.proj2img img,
+.proj3img img,
+.proj4img img,
+.proj5img img,
+.proj6img img {
+  transition: transform 0.2s ease;
+}
+
+.proj1:hover img,
+.proj2:hover img,
+.proj3:hover img,
+.proj4:hover img,
+.proj5:hover img,
+.proj6:hover img {
+  transform: scale(1.06);
+}
+
+#contact {
+  background-color: #0077FF;
+  min-height: 70vh; 
+  color: #CAFF1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;    
+}
+
+
+.contactcontents {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  padding: 60px 5vw;   
+}
+
+.contactcontents h2{
+  font-family: "Instrument Serif", serif;
+color:#CAFF1E;
+font-size: 100px;
+line-height: 0.9;
+}
+
+.contactcontents p{
+  font-family: 'Poppins', sans-serif;
+color:#CAFF1E;
+font-size: 17px;
+}
+
+#name, .message{
+    border: none;            
+  outline: none;           
+  background: transparent;  
+  color: #CAFF1E;           
+  border-bottom: 2px solid #CAFF1E; 
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  min-width: 400px;
+}
+
+.message::placeholder, .contactform input::placeholder{
+  color: #CAFF1E;
+}
+
+#email{
+  border: none;            
+  outline: none;           
+  background: transparent;  
+  color: #CAFF1E;           
+  border-bottom: 2px solid #CAFF1E; 
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  min-width: 190px;
+ margin:15px 10px 15px 0;
+}
+#phone{
+  border: none;            
+  outline: none;           
+  background: transparent;  
+  color: #CAFF1E;           
+  border-bottom: 2px solid #CAFF1E; 
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  min-width: 200px;
+  margin:15px 5px 15px 0;
+}
+
+label[for="name"]::after,
+label[for="email"]::after,
+label[for="phone"]::after,
+label[for="message"]::after {
+  content: " *";
+  color: #CAFF1E;
+  font-weight: bold;
+}
+
+.sendbutton{
+font-family: 'Poppins', sans-serif;
+padding: 10px 30px 10px 30px;
+border: 1.5px solid #CAFF1E;
+color:#CAFF1E;
+margin-top: 15px;
+background-color: #0077FF;
+}
+
+.sendbutton:hover {
+  background: #CAFF1E;            
+  color:#0077FF;             
+  transform: translateY(-3px); 
+}
+
+.bloggrid {
+  display: grid;
+  grid-template-columns: 350px 500px; /* left small column + tall image */
+  grid-template-rows: 380px 380px;  /* two matching heights */
+  gap: 20px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.blogcard,
+.blogcardtall,
+.blogcardbottom {
+  position: relative;
+  overflow: hidden;
+}
+
+.blogcard img,
+.blogcardtall img,
+.blogcardbottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tall image spans two rows */
+.blogcardtall {
+  grid-row: span 2;
+  height: 780px; 
+}
+
+/* Hover effect */
+.bloghover {
+  position: absolute;
+  inset: 0;
+  background: rgba(202, 255, 14, 0.92);
+  opacity: 0;
+  transition: 0.35s ease;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+}
+
+.blogcard:hover .bloghover,
+.blogcardtall:hover .bloghover,
+.blogcardbottom:hover .bloghover {
+  opacity: 1;
+}
+
+.blogtitle {
+  font-family: "Instrument Serif", serif;
+  width: 900px;
+  margin: 0 auto 8px auto;
+  text-align: left;
+  font-size: 150px;
+  color: #caff0e;
+}
+
+.blog{
+  background-color:#1f1f1f;
+  padding:100px;
+}
