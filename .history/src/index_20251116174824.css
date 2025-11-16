@@ -1,0 +1,56 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #111; /* your normal bg for the page */
+}
+
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #39ff14; /* Neon green */
+  color: black;
+  line-height: 1.6;
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make images and media responsive */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove list styles globally */
+ul {
+  list-style: none;
+}
+
+/* Anchor tag default styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
