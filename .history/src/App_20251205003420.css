@@ -645,9 +645,7 @@ background-color: #0077FF;
 }
 
 .readmorebtn:hover {
-    border: 1.6px solid  #1f1f1f;    
-  color: #1f1f1f;           
-  background-color:#caff0e;  
+  background: #333;
 }
 
 .closebtn{
@@ -660,12 +658,11 @@ margin-top: 15px;
   font-size: 14px;
   cursor: pointer;
   transition: 0.25s ease;
+  border-radius: 4px;
 }
 
 .closebtn:hover {
-   border: 1.6px solid  #1f1f1f;    
-  color: #1f1f1f;           
-  background-color:#caff0e;  
+  background: #333;
 }
 
 .modalOverlay {

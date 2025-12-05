@@ -136,7 +136,7 @@ We edited and color-graded the video in VN. The lighting for the desk scenes was
 Our group shared the work evenly. All four of us helped create the story, which was inspired by our own work lives and everyday experiences. Shania and I worked on the editing. Gautam acted in the video. Shania picked the song, and the direction was handled by Sidhant and Gautam.
       </p>
 
-      <button className="closebtn" onClick={() => setShowVideoModal(false)}>
+      <button className="closeBtn" onClick={() => setShowVideoModal(false)}>
         Back
       </button>
 

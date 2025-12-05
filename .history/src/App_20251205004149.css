@@ -645,9 +645,7 @@ background-color: #0077FF;
 }
 
 .readmorebtn:hover {
-    border: 1.6px solid  #1f1f1f;    
-  color: #1f1f1f;           
-  background-color:#caff0e;  
+  background: #333;
 }
 
 .closebtn{
@@ -663,7 +661,7 @@ margin-top: 15px;
 }
 
 .closebtn:hover {
-   border: 1.6px solid  #1f1f1f;    
+   border: 1.5px solid  #1f1f1f;    
   color: #1f1f1f;           
   background-color:#caff0e;  
 }

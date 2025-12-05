@@ -631,23 +631,19 @@ background-color: #0077FF;
 
 
 .readmorebtn {
-  display: inline-block;
-  width: auto;
+  margin-top: 15px;
   background: #1f1f1f;
   color: #caff0e;
   border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
-  cursor: pointer;
+  padding: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
+  cursor: pointer;
   transition: 0.25s ease;
 }
 
 .readmorebtn:hover {
-    border: 1.6px solid  #1f1f1f;    
-  color: #1f1f1f;           
-  background-color:#caff0e;  
+  background: #333;
 }
 
 .closebtn{
@@ -655,7 +651,7 @@ margin-top: 15px;
   background: #1f1f1f;
   color: #caff0e;
   border: none;
-  padding: 10px 400px;
+  padding: 10px 30px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   cursor: pointer;
@@ -663,9 +659,7 @@ margin-top: 15px;
 }
 
 .closebtn:hover {
-   border: 1.6px solid  #1f1f1f;    
-  color: #1f1f1f;           
-  background-color:#caff0e;  
+  background: #333;
 }
 
 .modalOverlay {
